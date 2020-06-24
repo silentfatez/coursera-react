@@ -122,7 +122,7 @@ class CommentForm extends Component {
         <Modal isOpen={this.state.isModal2Open} toggle={this.toggleModal2}>
           <ModalHeader toggle={this.toggleModal2}>Submit Comment</ModalHeader>
           <ModalBody>
-            <LocalForm onSubmit={(values) => this.hadnleSubmit(values)}>
+            <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
               <Row className="form-group">
                 <Label for="rating" md={12}>
                   rating
@@ -132,6 +132,7 @@ class CommentForm extends Component {
                     model=".rating"
                     name="rating"
                     className="form-control"
+                    id="rating"
                   >
                     <option>1</option>
                     <option>2</option>
